@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+
+    <!-- Title -->
+
+    <!-- Name Field -->
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00F8F4F4"
+        android:text="Back"
+        android:textColor="#130F0F" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-42dp"
+        android:layout_marginEnd="164dp"
+        android:text="Register"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Phone Field -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="58dp"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Cost Field -->
+    <EditText
+        android:id="@+id/editTextCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter cost per KM"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Address Dropdown -->
+
+    <!-- Done Button -->
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="382dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editTextText"
+        android:layout_marginTop="213dp"
+        android:onClick="backToHome"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCost"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your address" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="227dp"
+        android:text="TextView" />
+</RelativeLayout>
